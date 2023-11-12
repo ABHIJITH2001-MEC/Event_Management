@@ -30,7 +30,7 @@ The Event Management System is designed to provide a comprehensive solution for 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/event-management-system.git
+   git clone https://github.com/ABHIJITH2001-MEC/EVENT_MANAGEMENT.git
    cd event-management-system/backend
 2. Install dependencies:
 go mod tidy
