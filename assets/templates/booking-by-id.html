@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Forms for booking</h2>
+     
+    <h3> Ticket Remaining = {{.SingleEvent.TicketRemaining}} </h3><br>   
+
+<form action="/booking/show/create"  method="post">
+     {{.CSRFField}}
+    <label for="ID">Event Name</label><br>
+    <input type="text" value="{{.SingleEvent.EventName}}"><br>
+
+    <label for="ID">Date</label><br>
+    <input type="text" value="{{.SingleEvent.EventDate}}"><br>
+
+    <label for="ID">Per Person Price</label><br>
+    <input type="text" id="per_person_price"value="{{.SingleEvent.PerPersonPrice}}" ><br>    
+  
+    <input type="hidden" value="{{.SingleEvent.ID}}" name="EventId"><br>
+
+    <label name="NumberOfTicket">Number Of Ticket:</label><br>
+
+    <input id= "ticket_number" type="number" name="NumberOfTicket" oninput="sum()" required="required" max = {{.SingleEvent.TicketRemaining}}><br>
+
+    <label name="TotalAmount">Total Calculated Amount:</label><br>
+
+    <input id= "total_amount" type="text"><br>
+
+    <input type="submit" value="Submit" >
+
+</form> 
+</body>
+
+<script>
+
+// Calculte total number of ticket price
+function sum(){
+  var val1 = document.getElementById('per_person_price').value;
+  var val2 = document.getElementById('ticket_number').value;
+  var sum = Number(val1) * Number(val2);
+  console.log(sum);
+  document.getElementById('total_amount').value = sum;
+}
+</script>
+</html>
