@@ -12,7 +12,7 @@ The Event Management System is designed to provide a comprehensive solution for 
 - **RESTful APIs**: Designed to ensure a clear and standardized interface for communication between the frontend and backend.
 
 ### Frontend
-- **Choice of UI Framework**: Left flexible to accommodate various preferences. Developers can use their preferred UI framework or a combination of Bootstrap, HTML, CSS, and JavaScript.
+- **Choice of UI Framework**: React.js is being used here.
 
 ### Overall
 - **Scalability and Security**: The system is designed to be scalable to handle a growing number of events and users. Security measures are implemented to protect user data and ensure the system's integrity.
@@ -20,7 +20,7 @@ The Event Management System is designed to provide a comprehensive solution for 
 ## Technologies Used
 
 - **Backend**: Golang, Gin Framework, Cassandra (gocql package)
-- **Frontend**: [Specify the chosen UI framework or mention Bootstrap/HTML/CSS/JS]
+- **Frontend**: React.js
 - **Database**: Cassandra
 
 ## Setup Instructions
